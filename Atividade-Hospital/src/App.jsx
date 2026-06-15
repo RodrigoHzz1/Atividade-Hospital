@@ -6,8 +6,8 @@ import Footer from './components/Footer';
 import Home from './pages/home/index.jsx';
 import QuemSomos from './pages/quem-somos/index.jsx';
 import Servicos from './pages/servicos/index.jsx';
-import Contato from './pages/Contato'; 
-import Blog from './pages/blog/index.jsx'; // 1. IMPORTANTE: Importe o Blog da sua dupla aqui!
+import Blog from './pages/blog/index.jsx';
+import Contato from './pages/contato/index.jsx'; // Corrigido para minúsculo e apontando para o arquivo real!
 
 import './index.css';
 
@@ -21,11 +21,8 @@ export default function App() {
           <Route path="/" element={<Home />} />
           <Route path="/quem-somos" element={<QuemSomos />} />
           <Route path="/servicos" element={<Servicos />} />
+          <Route path="/blog" element={<Blog />} />
           <Route path="/contato" element={<Contato />} />
-          
-          {/* 2. CORREÇÃO AQUI: Mudamos de <Home /> para <Blog /> */}
-          <Route path="/blog" element={<Blog />} /> 
-          
           <Route path="/corpo-clinico" element={<Home />} />
         </Routes>
       </main>
