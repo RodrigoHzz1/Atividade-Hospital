@@ -1,35 +1,41 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
-// 1. Importe o Header (ajuste o caminho se a sua pasta components mudar de lugar)
-import Header from './assets/components/Header'; 
+// Componentes Estruturais Fixos
+import Header from './assets/components/Header/index.jsx'; 
+import Footer from './assets/components/Footer/index.jsx'; // Garantindo o rodapé da dupla
 
-// 2. Importe as suas páginas
-import Home from './pages/Home';
-import Contato from './pages/Contato';
+// Suas Páginas Prontas (Com as pastas corrigidas no padrão minúsculo!)
+import Home from './pages/home/index.jsx';
+import QuemSomos from './pages/quem-somos/index.jsx';
+import Servicos from './pages/servicos/index.jsx';
 
-// Se as outras páginas já tiverem alguma coisa dentro, pode importar elas também:
-// import QuemSomos from './pages/quem-somos';
-// import Servicos from './pages/servicos';
-// import CorpoClinico from './pages/corpo-clinico';
-// import Blog from './pages/blog';
+// Rotas futuras que vocês ainda vão criar juntos
+import Contato from './pages/Contato'; 
+
+import './index.css';
 
 export default function App() {
   return (
     <Router>
-      {/* O Header fica AQUI, fora das Routes, para aparecer fixo no topo de todas as páginas */}
+      {/* O Header fica fixo no topo de todas as páginas */}
       <Header />
 
-      <Routes>
-        {/* 3. Defina qual componente carrega em cada link */}
-        <Route path="/" element={<Home />} />
-        <Route path="/contato" element={<Contato />} />
+      {/* Área principal do site onde o conteúdo muda */}
+      <main style={{ minHeight: '80vh' }}>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/quem-somos" element={<QuemSomos />} />
+          <Route path="/servicos" element={<Servicos />} />
+          <Route path="/contato" element={<Contato />} />
 
-        {/* Rotas temporárias para as outras páginas não darem erro caso ainda estejam vazias */}
-        <Route path="/quem-somos" element={<div>Página Quem Somos em construção...</div>} />
-        <Route path="/servicos" element={<div>Página Exames em construção...</div>} />
-        <Route path="/corpo-clinico" element={<div>Página Corpo Clínico em construção...</div>} />
-        <Route path="/blog" element={<div>Página Blog em construção...</div>} />
-      </Routes>
+          {/* Rotas temporárias das páginas que faltam fazer */}
+          <Route path="/corpo-clinico" element={<Home />} />
+          <Route path="/blog" element={<Home />} />
+        </Routes>
+      </main>
+
+      {/* O Footer fica fixo na parte de baixo de todas as páginas */}
+      <Footer />
     </Router>
   );
 }
