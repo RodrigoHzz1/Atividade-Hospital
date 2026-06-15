@@ -5,8 +5,8 @@ Este é um site institucional moderno desenvolvido em **ReactJS** para um Labora
 ---
 
 ## 👥 Integrantes da Dupla
-* **Integrante 1:** [Seu Nome Completo] — GitHub: @[SeuUsuario]
-* **Integrante 2:** [Nome do Colega] — GitHub: @[UsuarioDoColega]
+* **Integrante 1:** Rodrigo Costa 
+* **Integrante 2:** Juan França 
 
 ---
 
