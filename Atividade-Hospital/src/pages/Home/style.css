@@ -9,7 +9,7 @@
   align-items: center;
   justify-content: space-between;
   gap: 40px;
-  background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%);
+  background: linear-gradient(135deg, #f0fdfa 0%, #ccfbf1 100%);
   padding: 50px;
   border-radius: 16px;
   margin-bottom: 50px;
@@ -20,45 +20,41 @@
 }
 
 .hero-content h1 {
-  font-size: 2.5rem;
+  font-size: 2.8rem;
   color: #0f172a;
   margin-bottom: 20px;
   line-height: 1.2;
 }
 
 .hero-content p {
-  font-size: 1.1rem;
-  color: #475569;
+  font-size: 1.15rem;
+  color: #334155;
   margin-bottom: 30px;
   line-height: 1.6;
 }
 
-.cta-button {
-  display: inline-block;
-  background-color: #0284c7;
-  color: #ffffff;
-  padding: 12px 28px;
-  border-radius: 8px;
-  text-decoration: none;
-  font-weight: 600;
-  transition: background-color 0.2s ease;
-}
-
-.cta-button:hover {
-  background-color: #0369a1;
-}
-
-.hero-image {
+.hero-image-container {
   flex: 1;
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
-.hero-image img {
-  max-width: 100%;
+.lab-illustration {
+  width: 100%;
+  max-width: 450px;
   height: auto;
-  border-radius: 12px;
-  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.05);
+  animation: floatEffect 4s ease-in-out infinite;
+}
+
+/* Animação sutil para dar vida ao laboratório */
+@keyframes floatEffect {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
 }
 
 .features-grid {
@@ -88,12 +84,12 @@
 
 .feature-card h3 {
   font-size: 1.3rem;
-  color: #1e293b;
+  color: #0f172a;
   margin-bottom: 10px;
 }
 
 .feature-card p {
-  color: #64748b;
+  color: #334155;
   font-size: 0.95rem;
   line-height: 1.5;
 }
