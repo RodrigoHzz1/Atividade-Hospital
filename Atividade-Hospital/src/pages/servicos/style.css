@@ -1,0 +1,125 @@
+.services-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  background-color: #ffffff;
+}
+
+.services-hero {
+  text-align: center;
+  background-color: #1e293b;
+  color: #ffffff;
+  padding: 60px 20px;
+  border-radius: 12px;
+  margin-bottom: 50px;
+}
+
+.services-hero h1 {
+  font-size: 2.8rem;
+  margin-bottom: 15px;
+  color: #ffffff;
+}
+
+.services-hero p {
+  font-size: 1.15rem;
+  color: #94a3b8;
+  max-width: 700px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+.services-list h2 {
+  font-size: 2.2rem;
+  color: #0f172a;
+  margin-bottom: 35px;
+  text-align: center;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 25px;
+  margin-bottom: 50px;
+}
+
+.exam-card {
+  background-color: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  padding: 25px;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+}
+
+.exam-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 15px;
+  margin-bottom: 15px;
+  border-bottom: 1px solid #e2e8f0;
+  padding-bottom: 15px;
+}
+
+.exam-header h3 {
+  font-size: 1.3rem;
+  color: #0f172a;
+  font-weight: 700;
+}
+
+.exam-time {
+  font-size: 0.85rem;
+  background-color: #ccfbf1;
+  color: #0f766e;
+  padding: 4px 10px;
+  border-radius: 20px;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.exam-body h4 {
+  font-size: 1rem;
+  color: #0d9488;
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+
+.exam-body p {
+  font-size: 0.95rem;
+  color: #334155;
+  line-height: 1.6;
+}
+
+.services-info {
+  background-color: #f0fdfa;
+  border-left: 4px solid #0d9488;
+  padding: 30px;
+  border-radius: 8px;
+}
+
+.services-info h3 {
+  color: #0f766e;
+  margin-bottom: 15px;
+  font-size: 1.4rem;
+}
+
+.services-info ul {
+  list-style-type: none;
+}
+
+.services-info li {
+  color: #334155;
+  margin-bottom: 12px;
+  font-size: 1.05rem;
+  position: relative;
+  padding-left: 20px;
+}
+
+.services-info li::before {
+  content: "•";
+  color: #0d9488;
+  font-weight: bold;
+  font-size: 1.4rem;
+  position: absolute;
+  left: 0;
+  top: -3px;
+}
