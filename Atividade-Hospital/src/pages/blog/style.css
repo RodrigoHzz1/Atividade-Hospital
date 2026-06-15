@@ -1,0 +1,144 @@
+.blog-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  font-family: sans-serif;
+  min-height: 80vh;
+}
+
+.blog-header {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.blog-header h2 {
+  color: #0b4375; /* Azul do LabSaúde */
+  font-size: 2.2rem;
+  margin-bottom: 10px;
+}
+
+.blog-header p {
+  color: #64748b;
+  font-size: 1.1rem;
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+/* Grid de Postagens */
+.blog-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+  gap: 30px;
+}
+
+.blog-card {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  overflow: hidden;
+  display: flex;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.blog-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+}
+
+.blog-card-icon {
+  background-color: #f0fdfa; /* Verde água clarinho */
+  font-size: 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 100px;
+  border-right: 1px solid #e2e8f0;
+}
+
+.blog-card-content {
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-grow: 1;
+}
+
+.blog-card-meta {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  margin-bottom: 10px;
+  font-size: 0.85rem;
+}
+
+.blog-category {
+  background-color: #ccfbf1;
+  color: #0f766e; /* Verde escuro */
+  padding: 4px 10px;
+  border-radius: 20px;
+  font-weight: bold;
+}
+
+.blog-date {
+  color: #94a3b8;
+}
+
+.blog-card content h3 {
+  color: #0b4375;
+  font-size: 1.25rem;
+  margin: 0 0 10px 0;
+  line-height: 1.4;
+}
+
+.blog-card-content p {
+  color: #475569;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  margin: 0 0 20px 0;
+}
+
+.blog-card-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid #f1f5f9;
+  padding-top: 15px;
+}
+
+.read-time {
+  color: #64748b;
+  font-size: 0.85rem;
+}
+
+.read-more-btn {
+  background: none;
+  border: none;
+  color: #0b4375;
+  font-weight: bold;
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: color 0.2s;
+}
+
+.read-more-btn:hover {
+  color: #10b981; /* Muda para verde ao passar o mouse */
+}
+
+/* Responsividade para telas menores */
+@media (max-width: 600px) {
+  .blog-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .blog-card {
+    flex-direction: column;
+  }
+  
+  .blog-card-icon {
+    padding: 20px 0;
+    border-right: none;
+    border-bottom: 1px solid #e2e8f0;
+  }
+}

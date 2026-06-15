@@ -1,23 +1,18 @@
 .main-footer {
-  background-color: #0f172a;
-  color: #94a3b8;
+  background-color: #1e293b; /* Tom escuro elegante que combina com o SVG */
+  color: #f8fafc;
   padding: 30px 20px;
   text-align: center;
-  margin-top: 50px;
-  border-top: 1px solid #1e293b;
+  font-family: sans-serif;
+  margin-top: 60px;
 }
 
-.footer-container {
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-.main-footer p {
+.footer-container p {
   margin: 5px 0;
   font-size: 0.95rem;
 }
 
 .footer-subtext {
-  font-size: 0.85rem;
-  color: #64748b;
+  color: #94a3b8; /* Texto secundário um pouco mais claro */
+  font-size: 0.85rem !important;
 }

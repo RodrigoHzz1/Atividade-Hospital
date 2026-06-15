@@ -1,0 +1,91 @@
+.clinico-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  font-family: sans-serif;
+  min-height: 80vh;
+}
+
+.clinico-header {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.clinico-header h2 {
+  color: #0b4375; /* Azul institucional */
+  font-size: 2.2rem;
+  margin-bottom: 10px;
+}
+
+.clinico-header p {
+  color: #64748b;
+  font-size: 1.1rem;
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+/* Grid do Corpo Clínico */
+.clinico-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+}
+
+.clinico-card {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  padding: 30px 20px;
+  text-align: center;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.clinico-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+}
+
+.clinico-avatar {
+  font-size: 3.5rem;
+  background-color: #f0fdfa; /* Fundo verde água sutil */
+  width: 90px;
+  height: 90px;
+  margin: 0 auto 20px auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+
+.clinico-card h3 {
+  color: #0b4375;
+  font-size: 1.3rem;
+  margin: 0 0 8px 0;
+}
+
+.badge-especialidade {
+  display: inline-block;
+  background-color: #ccfbf1;
+  color: #0f766e;
+  font-weight: bold;
+  font-size: 0.85rem;
+  padding: 4px 12px;
+  border-radius: 20px;
+  margin-bottom: 6px;
+}
+
+.medico-crm {
+  color: #94a3b8;
+  font-size: 0.85rem;
+  margin: 0 0 15px 0;
+  font-weight: 600;
+}
+
+.medico-desc {
+  color: #475569;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  margin: 0;
+}
