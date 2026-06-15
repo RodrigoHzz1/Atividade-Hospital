@@ -1,0 +1,111 @@
+.about-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+.about-hero {
+  text-align: center;
+  background-color: #0f172a;
+  color: #ffffff;
+  padding: 60px 20px;
+  border-radius: 16px;
+  margin-bottom: 50px;
+}
+
+.about-hero h1 {
+  font-size: 3rem;
+  margin-bottom: 15px;
+}
+
+.about-hero .lead {
+  font-size: 1.2rem;
+  color: #94a3b8;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.about-content {
+  display: flex;
+  gap: 50px;
+  align-items: center;
+  margin-bottom: 60px;
+}
+
+.about-text {
+  flex: 1.5;
+}
+
+.about-text h2 {
+  font-size: 2rem;
+  color: #1e293b;
+  margin-bottom: 20px;
+}
+
+.about-text p {
+  color: #475569;
+  font-size: 1.1rem;
+  line-height: 1.7;
+  margin-bottom: 15px;
+}
+
+.about-metrics {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.metric-card {
+  background-color: #f8fafc;
+  border: 1px solid #e2e8f0;
+  padding: 20px;
+  border-radius: 12px;
+  text-align: center;
+}
+
+.metric-card h3 {
+  font-size: 2rem;
+  color: #0284c7;
+  margin-bottom: 5px;
+}
+
+.metric-card p {
+  color: #64748b;
+  margin: 0;
+}
+
+.about-values {
+  background-color: #f0f9ff;
+  padding: 40px;
+  border-radius: 16px;
+}
+
+.about-values h2 {
+  text-align: center;
+  color: #0f172a;
+  margin-bottom: 30px;
+}
+
+.values-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+}
+
+.value-item h4 {
+  font-size: 1.2rem;
+  color: #0369a1;
+  margin-bottom: 10px;
+}
+
+.value-item p {
+  color: #475569;
+  line-height: 1.5;
+}
+
+@media (max-width: 768px) {
+  .about-content {
+    flex-direction: column;
+  }
+}
