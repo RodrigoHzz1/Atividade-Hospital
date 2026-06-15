@@ -1,6 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import heroImg from '../hero.png'; // Sobe 1 nível até a pasta assets onde está a imagem
+
+// Caminho limpo usando barras normais: sai de home, sai de pages e entra em assets
+import heroImg from '../../assets/hero.png'; 
 import './style.css'; 
 
 export default function Home() {

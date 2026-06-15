@@ -1,11 +1,11 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
-// Componentes estruturais (dentro de assets/components)
+// Componentes estruturais (dentro de src/assets/components)
 import Header from './assets/components/Header/index.jsx'; 
 import Footer from './assets/components/Footer/index.jsx';
 
-// Importação cirúrgica para a sua pasta pages\home atual
-import Home from './assets/pages\\home/index.jsx'; 
+// Importação da Home ajustada para a nova pasta limpa
+import Home from './pages/home/index.jsx'; 
 
 import './index.css';
 
