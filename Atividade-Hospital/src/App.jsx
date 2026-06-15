@@ -1,38 +1,35 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
-// Componentes estruturais
-import Header from './assets/components/Header/index.jsx'; 
-import Footer from './assets/components/Footer/index.jsx';
+// 1. Importe o Header (ajuste o caminho se a sua pasta components mudar de lugar)
+import Header from './assets/components/Header'; 
 
-// Páginas
-import Home from './pages/home/index.jsx'; 
-import QuemSomos from './pages/quem-somos/index.jsx'; // Nova Importação!
+// 2. Importe as suas páginas
+import Home from './pages/Home';
+import Contato from './pages/Contato';
 
-import './index.css';
+// Se as outras páginas já tiverem alguma coisa dentro, pode importar elas também:
+// import QuemSomos from './pages/quem-somos';
+// import Servicos from './pages/servicos';
+// import CorpoClinico from './pages/corpo-clinico';
+// import Blog from './pages/blog';
 
-function App() {
+export default function App() {
   return (
     <Router>
+      {/* O Header fica AQUI, fora das Routes, para aparecer fixo no topo de todas as páginas */}
       <Header />
-      
-      <main style={{ minHeight: '80vh' }}>
-        <Routes>
-          <Route path="/" element={<Home />} />
-          
-          {/* Rota atualizada para abrir a página nova de verdade */}
-          <Route path="/quem-somos" element={<QuemSomos />} /> 
-          
-          {/* Próximas rotas (temporárias) */}
-          <Route path="/servicos" element={<Home />} />
-          <Route path="/corpo-clinico" element={<Home />} />
-          <Route path="/blog" element={<Home />} />
-          <Route path="/contato" element={<Home />} />
-        </Routes>
-      </main>
 
-      <Footer />
+      <Routes>
+        {/* 3. Defina qual componente carrega em cada link */}
+        <Route path="/" element={<Home />} />
+        <Route path="/contato" element={<Contato />} />
+
+        {/* Rotas temporárias para as outras páginas não darem erro caso ainda estejam vazias */}
+        <Route path="/quem-somos" element={<div>Página Quem Somos em construção...</div>} />
+        <Route path="/servicos" element={<div>Página Exames em construção...</div>} />
+        <Route path="/corpo-clinico" element={<div>Página Corpo Clínico em construção...</div>} />
+        <Route path="/blog" element={<div>Página Blog em construção...</div>} />
+      </Routes>
     </Router>
   );
 }
-
-export default App;
