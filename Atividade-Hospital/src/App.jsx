@@ -3,11 +3,11 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Header from './components/Header'; 
 import Footer from './components/Footer'; 
 
-import Home from './pages/home/index.jsx';
-import QuemSomos from './pages/quem-somos/index.jsx';
-import Servicos from './pages/servicos/index.jsx';
-import Blog from './pages/blog/index.jsx';
-import Contato from './pages/contato/index.jsx'; // Corrigido para minúsculo e apontando para o arquivo real!
+import Home from './pages/home';
+import QuemSomos from './pages/quem-somos';
+import Servicos from './pages/servicos';
+import Blog from './pages/blog';
+import Contato from './pages/contato'; // Garanta que o 'c' está minúsculo! // Corrigido para minúsculo e apontando para o arquivo real!
 
 import './index.css';
 
